@@ -8,3 +8,8 @@ license = "Apache 2.0"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+felt = { git="https://github.com/FuzzingLabs/cairo-rs/", package = "cairo-felt", rev="9c9435062c96e8052eacd3e58e5d37e904fee1c4"}
+
+[[bin]]
+name = "test"
+path = "src/test/main.rs"
